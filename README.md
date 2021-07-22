@@ -1,37 +1,10 @@
-## Welcome to GitHub Pages
+# Das schräge Labyrinth
 
-You can use the [editor on GitHub](https://github.com/vido-bit/vido-bit.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Herzlich Willkommen zum schrägen Labyrinth.
+Neige die Plattform mit _W,A,S,D_ um die Kugel durch die Schwerkraft in eine bestimmte Richtung zu bewegen. Das Ziel ist es, sie durch eines der beiden Löcher in der Plattform zu bekommen. Aber Vorsicht: Sobald die Kugel eine der Barrieren des Labyrinths berührt, prallt die Kugel an dieser bei der nächsten Berührung stärker ab, was es schwerer macht, die Kugel wie gewünscht zu manövrieren. Die verschiedenen "Bounce"-grade der Barrieren kannst du auch gut an ihrer Farbe erkennen.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Links oben im Viewport befindet sich das User Interface. Hier hast du die Möglichkeit selbst eines der drei Level und somit verschiedene Labyrinth-Szenen auszuwählen.
 
-### Markdown
+Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalten der Kugel beeinflussen. Möchtest du diese anpassen, gehe in die ```Config.json.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vido-bit/vido-bit.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Viel Spaß beim spielen!

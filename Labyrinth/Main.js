@@ -256,7 +256,6 @@ var Labyrinth;
         }
     }
     function showSuccessMessage() {
-        cmpLvlAudio.play(true);
         let successDiv = document.getElementById("success-message");
         successDiv.style.display = "block";
         let successHeading = document.getElementById("sm-heading");
@@ -274,6 +273,7 @@ var Labyrinth;
         lvl3Button.addEventListener("click", handleLevel3Click);
         moveables.removeAllChildren();
         viewport.draw();
+        cmpLvlAudio.play(true);
     }
     function handleLevel1Click(_click) {
         let successDiv = document.getElementById("success-message");

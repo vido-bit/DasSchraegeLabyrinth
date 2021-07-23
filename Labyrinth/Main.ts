@@ -284,7 +284,6 @@ namespace Labyrinth {
     }
     function showSuccessMessage(): void {
         moveables.removeAllChildren();
-        cmpLvlAudio.play(true);
         let successDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("success-message");
         successDiv.style.display = "block";
         let successHeading: HTMLHeadingElement = <HTMLHeadingElement>document.getElementById("sm-heading");
@@ -297,10 +296,10 @@ namespace Labyrinth {
         lvl1Button.innerText = "Level 1";
         lvl2Button.innerText = "Level 2";
         lvl3Button.innerText = "Level 3";
+        cmpLvlAudio.play(true);
         lvl1Button.addEventListener("click", handleLevel1Click);
         lvl2Button.addEventListener("click", handleLevel2Click);
         lvl3Button.addEventListener("click", handleLevel3Click);
-        // viewport.draw(); 
     }
     function handleLevel1Click(_click: Event): void {
         let successDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("success-message");

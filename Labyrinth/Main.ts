@@ -372,8 +372,8 @@ namespace Labyrinth {
         gameState.level = 3;
     }
     function setUpAudio(): void {
-        let collisionSound: ƒ.Audio = new ƒ.Audio(Utils.path() + "/Labyrinth/audio/jump.mp3");
-        let lvlCompleteSound: ƒ.Audio = new ƒ.Audio(Utils.path() + "/Labyrinth/audio/crowd_cheering.mp3");
+        let collisionSound: ƒ.Audio = new ƒ.Audio("./Labyrinth/audio/jump.mp3");
+        let lvlCompleteSound: ƒ.Audio = new ƒ.Audio("./Labyrinth/audio/crowd_cheering.mp3");
         cmpCollisionAudio = new ƒ.ComponentAudio(collisionSound, false, false);
         cmpLvlAudio = new ƒ.ComponentAudio(lvlCompleteSound, false, false);
         let lvlAudioNode: ƒ.Node = new ƒ.Node("LevelSuccessSound");

@@ -17,9 +17,4 @@ Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalte
 
 Design-Konzept: (https://github.com/vido-bit/vido-bit.github.io/blob/dfde7fec07d56ce2bd98409c1bf9489b407e4a9a/PRIMA_Konzeption.pdf);
 
-<img width="908" alt="Bildschirmfoto 2021-07-22 um 22 47 55" src="https://user-images.githubusercontent.com/64126756/126723658-672f3975-2c47-4d76-a6a6-9679a464616f.png">
-
-[PRIMA_Konzeption.pdf](https://github.com/vido-bit/vido-bit.github.io/files/6866004/PRIMA_Konzeption.pdf)
-
-
 

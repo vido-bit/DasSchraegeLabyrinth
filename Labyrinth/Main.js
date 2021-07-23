@@ -39,7 +39,7 @@ var Labyrinth;
         ƒ.Physics.settings.defaultFriction = 0.1;
     }
     async function startInteractiveViewport() {
-        let response = await fetch(Labyrinth.Utils.path() + "/Labyrinth/data/Config.json");
+        let response = await fetch("./Labyrinth/data/Config.json");
         let responseString = await response.text();
         config = JSON.parse(responseString);
         // load resources referenced in the link-tag

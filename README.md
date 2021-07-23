@@ -15,6 +15,6 @@ Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalte
 
 
 
-Design-Konzept: (https://github.com/vido-bit/vido-bit.github.io/blob/dfde7fec07d56ce2bd98409c1bf9489b407e4a9a/PRIMA_Konzeption.pdf);
+Design-Konzept: (https://vido-bit.github.io/PRIMA_Konzeption.pdf);
 
 

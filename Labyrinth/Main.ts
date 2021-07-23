@@ -44,7 +44,7 @@ namespace Labyrinth {
         ƒ.Physics.settings.defaultFriction = 0.1;
     }
     async function startInteractiveViewport(): Promise<void> {
-        let response: Response = await fetch(Utils.path() + "data/Config.json");
+        let response: Response = await fetch("data/Config.json");
         let responseString: string = await response.text();
         config = <Config>JSON.parse(responseString);
         // load resources referenced in the link-tag
@@ -372,8 +372,8 @@ namespace Labyrinth {
         gameState.level = 3;
     }
     function setUpAudio(): void {
-        let collisionSound: ƒ.Audio = new ƒ.Audio(Utils.path() + "audio/jump.mp3");
-        let lvlCompleteSound: ƒ.Audio = new ƒ.Audio(Utils.path() + "audio/crowd_cheering.mp3");
+        let collisionSound: ƒ.Audio = new ƒ.Audio("audio/jump.mp3");
+        let lvlCompleteSound: ƒ.Audio = new ƒ.Audio("audio/crowd_cheering.mp3");
         cmpCollisionAudio = new ƒ.ComponentAudio(collisionSound, false, false);
         cmpLvlAudio = new ƒ.ComponentAudio(lvlCompleteSound, false, false);
         let lvlAudioNode: ƒ.Node = new ƒ.Node("LevelSuccessSound");

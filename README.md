@@ -17,6 +17,6 @@ Zum Spiel: (https://vido-bit.github.io/DasSchraegeLabyrinth);
 
 Design-Konzept: (https://vido-bit.github.io/PRIMA_Konzeption.pdf);
 
-Download als .zip (https://github.com/vido-bit/DasSchraegeLabyrinth/archive/refs/heads/main.zip);
+Download als .zip: (https://github.com/vido-bit/DasSchraegeLabyrinth/archive/refs/heads/main.zip);
 
 

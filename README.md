@@ -5,7 +5,7 @@ Neige die Plattform mit _W,A,S,D_ um die Kugel in eine bestimmte Richtung zu bew
 
 Links oben im Viewport befindet sich das User Interface. Hier hast du die Möglichkeit selbst eines der drei Level und somit verschiedene Labyrinth-Szenen auszuwählen.
 
-Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalten der Kugel beeinflussen. Möchtest du diese anpassen, gehe in die `Config.json`(https://github.com/vido-bit/DasSchraegeLabyrinth/blob/main/Labyrinth/data/Config.json).
+Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalten der Kugel beeinflussen. Möchtest du diese anpassen, gehe in die `Config.json`(https://github.com/vido-bit/DasSchraegeLabyrinth/blob/5831e6fd6d47e29ab925a9563faac2fe7e86ca68/Labyrinth/data/Config.json).
 
 ### Viel Spaß beim spielen!
 
@@ -15,7 +15,7 @@ Zum Spiel: (https://vido-bit.github.io/DasSchraegeLabyrinth);
 - bitte benutze einen Chrome-basierten Browser um das Spiel zu spielen!
 
 
-Design-Konzept: (https://vido-bit.github.io/PRIMA_Konzeption.pdf);
+Design-Konzept: (https://github.com/vido-bit/DasSchraegeLabyrinth/blob/5831e6fd6d47e29ab925a9563faac2fe7e86ca68/PRIMA_Konzeption.pdf);
 
 Download als .zip: (https://github.com/vido-bit/DasSchraegeLabyrinth/archive/refs/heads/main.zip);
 

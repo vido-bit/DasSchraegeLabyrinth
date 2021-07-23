@@ -1,6 +1,6 @@
 # Das schräge Labyrinth 
 
-Zum Spiel: (vido-bit.github.io/Labyrinth/index.html)
+Zum Spiel: (https://vido-bit.github.io/Labyrinth/index.html);
 
 Herzlich Willkommen zum schrägen Labyrinth.
 Neige die Plattform mit _W,A,S,D_ um die Kugel in eine bestimmte Richtung zu bewegen. Das Ziel ist es, sie durch eines der beiden Löcher in der Plattform zu bekommen. Aber Vorsicht: Sobald die Kugel eine der Barrieren des Labyrinths berührt, prallt die Kugel an dieser bei der nächsten Berührung stärker ab, was es schwerer macht, die Kugel wie gewünscht zu manövrieren. Die verschiedenen "Bounce"-grade der Barrieren kannst du auch gut an ihrer Farbe erkennen.

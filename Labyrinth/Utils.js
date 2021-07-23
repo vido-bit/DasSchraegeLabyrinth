@@ -2,10 +2,10 @@ var Labyrinth;
 (function (Labyrinth) {
     class Utils {
         static path() {
-            if (location.protocol == "https:")
+            if (location.protocol == "http:")
                 return "";
             else
-                return "./vido-bit.github.io/";
+                return "./DasSchraegeLabyrinth";
         }
     }
     Labyrinth.Utils = Utils;

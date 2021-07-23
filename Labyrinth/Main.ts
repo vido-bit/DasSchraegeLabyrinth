@@ -385,6 +385,6 @@ namespace Labyrinth {
         basicFloor.appendChild(collisionAudioNode);
         ƒ.AudioManager.default.listenWith(cmpListener);
         ƒ.AudioManager.default.listenTo(root);
-        ƒ.AudioManager.default.volume = 0.2;
+        ƒ.AudioManager.default.volume = 0.1;
     }
 }

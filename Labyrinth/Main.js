@@ -254,99 +254,99 @@ var Labyrinth;
         if (ball.mtxLocal.translation.y < -10) {
             showSuccessMessage();
         }
-        function showSuccessMessage() {
-            cmpLvlAudio.play(true);
-            let successDiv = document.getElementById("success-message");
-            successDiv.style.display = "block";
-            let successHeading = document.getElementById("sm-heading");
-            let subHeading = document.getElementById("sm-subheading");
-            let lvl1Button = document.getElementById("lvl1-button");
-            let lvl2Button = document.getElementById("lvl2-button");
-            let lvl3Button = document.getElementById("lvl3-button");
-            successHeading.innerText = "Congratulations!";
-            subHeading.innerText = "Play again?";
-            lvl1Button.innerText = "Level 1";
-            lvl2Button.innerText = "Level 2";
-            lvl3Button.innerText = "Level 3";
-            lvl1Button.addEventListener("click", handleLevel1Click);
-            lvl2Button.addEventListener("click", handleLevel2Click);
-            lvl3Button.addEventListener("click", handleLevel3Click);
-            moveables.removeAllChildren();
-            viewport.draw();
-        }
-        function handleLevel1Click(_click) {
-            let successDiv = document.getElementById("success-message");
-            successDiv.style.display = "none";
-            for (let node of level1.getChildren()) {
-                node.activate(true);
-                node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
-                let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
-                if (!node.getComponent(ƒ.ComponentRigidbody)) {
-                    cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
-                    cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
-                    cmpRigidBarrier.restitution = 1;
-                    node.addComponent(cmpRigidBarrier);
-                }
-                else
-                    node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
+    }
+    function showSuccessMessage() {
+        cmpLvlAudio.play(true);
+        let successDiv = document.getElementById("success-message");
+        successDiv.style.display = "block";
+        let successHeading = document.getElementById("sm-heading");
+        let subHeading = document.getElementById("sm-subheading");
+        let lvl1Button = document.getElementById("lvl1-button");
+        let lvl2Button = document.getElementById("lvl2-button");
+        let lvl3Button = document.getElementById("lvl3-button");
+        successHeading.innerText = "Congratulations!";
+        subHeading.innerText = "Play again?";
+        lvl1Button.innerText = "Level 1";
+        lvl2Button.innerText = "Level 2";
+        lvl3Button.innerText = "Level 3";
+        lvl1Button.addEventListener("click", handleLevel1Click);
+        lvl2Button.addEventListener("click", handleLevel2Click);
+        lvl3Button.addEventListener("click", handleLevel3Click);
+        moveables.removeAllChildren();
+        viewport.draw();
+    }
+    function handleLevel1Click(_click) {
+        let successDiv = document.getElementById("success-message");
+        successDiv.style.display = "none";
+        for (let node of level1.getChildren()) {
+            node.activate(true);
+            node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
+            let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
+            if (!node.getComponent(ƒ.ComponentRigidbody)) {
+                cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
+                cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
+                cmpRigidBarrier.restitution = 1;
+                node.addComponent(cmpRigidBarrier);
             }
-            createBall();
-            Labyrinth.gameState.level = 1;
+            else
+                node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
         }
-        function handleLevel2Click(_click) {
-            let successDiv = document.getElementById("success-message");
-            successDiv.style.display = "none";
-            for (let node of level2.getChildren()) {
-                node.activate(true);
-                node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
-                let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
-                if (!node.getComponent(ƒ.ComponentRigidbody)) {
-                    cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
-                    cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
-                    cmpRigidBarrier.restitution = 1;
-                    node.addComponent(cmpRigidBarrier);
-                }
-                else
-                    node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
+        createBall();
+        Labyrinth.gameState.level = 1;
+    }
+    function handleLevel2Click(_click) {
+        let successDiv = document.getElementById("success-message");
+        successDiv.style.display = "none";
+        for (let node of level2.getChildren()) {
+            node.activate(true);
+            node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
+            let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
+            if (!node.getComponent(ƒ.ComponentRigidbody)) {
+                cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
+                cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
+                cmpRigidBarrier.restitution = 1;
+                node.addComponent(cmpRigidBarrier);
             }
-            createBall();
-            Labyrinth.gameState.level = 2;
+            else
+                node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
         }
-        function handleLevel3Click(_click) {
-            let successDiv = document.getElementById("success-message");
-            successDiv.style.display = "none";
-            for (let node of level3.getChildren()) {
-                node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
-                node.activate(true);
-                let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
-                if (!node.getComponent(ƒ.ComponentRigidbody)) {
-                    cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
-                    cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
-                    cmpRigidBarrier.restitution = 1;
-                    node.addComponent(cmpRigidBarrier);
-                }
-                else
-                    node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
+        createBall();
+        Labyrinth.gameState.level = 2;
+    }
+    function handleLevel3Click(_click) {
+        let successDiv = document.getElementById("success-message");
+        successDiv.style.display = "none";
+        for (let node of level3.getChildren()) {
+            node.getComponent(ƒ.ComponentMaterial).material = barrierMtr;
+            node.activate(true);
+            let cmpRigidBarrier = new ƒ.ComponentRigidbody(1, ƒ.PHYSICS_TYPE.KINEMATIC, ƒ.COLLIDER_TYPE.CUBE, ƒ.PHYSICS_GROUP.GROUP_1);
+            if (!node.getComponent(ƒ.ComponentRigidbody)) {
+                cmpRigidBarrier.addEventListener("ColliderEnteredCollision" /* COLLISION_ENTER */, handleCollisionEventEnter);
+                cmpRigidBarrier.addEventListener("ColliderLeftCollision" /* COLLISION_EXIT */, handleCollisionEventExit);
+                cmpRigidBarrier.restitution = 1;
+                node.addComponent(cmpRigidBarrier);
             }
-            createBall();
-            Labyrinth.gameState.level = 3;
+            else
+                node.getComponent(ƒ.ComponentRigidbody).restitution = 1;
         }
-        function setUpAudio() {
-            let collisionSound = new ƒ.Audio("./Labyrinth/audio/jump.mp3");
-            let lvlCompleteSound = new ƒ.Audio("./Labyrinth/audio/crowd_cheering.mp3");
-            cmpCollisionAudio = new ƒ.ComponentAudio(collisionSound, false, false);
-            cmpLvlAudio = new ƒ.ComponentAudio(lvlCompleteSound, false, false);
-            let lvlAudioNode = new ƒ.Node("LevelSuccessSound");
-            let collisionAudioNode = new ƒ.Node("CollisionSound");
-            camNode.addComponent(cmpListener);
-            lvlAudioNode.addComponent(cmpLvlAudio);
-            collisionAudioNode.addComponent(cmpCollisionAudio);
-            basicFloor.appendChild(lvlAudioNode);
-            basicFloor.appendChild(collisionAudioNode);
-            ƒ.AudioManager.default.listenWith(cmpListener);
-            ƒ.AudioManager.default.listenTo(root);
-            ƒ.AudioManager.default.volume = 0.1;
-        }
+        createBall();
+        Labyrinth.gameState.level = 3;
+    }
+    function setUpAudio() {
+        let collisionSound = new ƒ.Audio("./Labyrinth/audio/jump.mp3");
+        let lvlCompleteSound = new ƒ.Audio("./Labyrinth/audio/crowd_cheering.mp3");
+        cmpCollisionAudio = new ƒ.ComponentAudio(collisionSound, false, false);
+        cmpLvlAudio = new ƒ.ComponentAudio(lvlCompleteSound, false, false);
+        let lvlAudioNode = new ƒ.Node("LevelSuccessSound");
+        let collisionAudioNode = new ƒ.Node("CollisionSound");
+        camNode.addComponent(cmpListener);
+        lvlAudioNode.addComponent(cmpLvlAudio);
+        collisionAudioNode.addComponent(cmpCollisionAudio);
+        basicFloor.appendChild(lvlAudioNode);
+        basicFloor.appendChild(collisionAudioNode);
+        ƒ.AudioManager.default.listenWith(cmpListener);
+        ƒ.AudioManager.default.listenTo(root);
+        ƒ.AudioManager.default.volume = 0.1;
     }
 })(Labyrinth || (Labyrinth = {}));
 //# sourceMappingURL=Main.js.map

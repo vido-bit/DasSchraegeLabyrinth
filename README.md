@@ -11,10 +11,12 @@ Rechts oben siehst du drei Parameter und deren aktuellen Werte, die das verhalte
 
 
 
-Zum Spiel: (https://vido-bit.github.io/DasSchraegeLabyrinth;
+Zum Spiel: (https://vido-bit.github.io/DasSchraegeLabyrinth);
 - bitte benutze einen Chrome-basierten Browser um das Spiel zu spielen!
 
 
 Design-Konzept: (https://vido-bit.github.io/PRIMA_Konzeption.pdf);
+
+Download als .zip (https://github.com/vido-bit/DasSchraegeLabyrinth/archive/refs/heads/main.zip);
 
 

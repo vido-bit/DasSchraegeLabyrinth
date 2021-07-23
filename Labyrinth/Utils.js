@@ -2,7 +2,7 @@ var Labyrinth;
 (function (Labyrinth) {
     class Utils {
         static path() {
-            if (location.protocol == "http:")
+            if (location.protocol == "https:")
                 return "";
             else
                 return "./vido-bit.github.io/";

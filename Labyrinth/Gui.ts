@@ -1,7 +1,7 @@
 namespace Labyrinth {
   import ƒui = FudgeUserInterface;
   class GameState extends ƒ.Mutable {
-    public level: number = 1;
+    public level: number = 0;
     protected reduceMutator(_mutator: ƒ.Mutator): void {
       /* */
     }

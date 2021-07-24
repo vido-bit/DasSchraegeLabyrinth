@@ -2,7 +2,7 @@ var Labyrinth;
 (function (Labyrinth) {
     var ƒui = FudgeUserInterface;
     class GameState extends ƒ.Mutable {
-        level = 1;
+        level = 0;
         reduceMutator(_mutator) {
             /* */
         }

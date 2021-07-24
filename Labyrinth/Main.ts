@@ -296,12 +296,12 @@ namespace Labyrinth {
         lvl1Button.innerText = "Level 1";
         lvl2Button.innerText = "Level 2";
         lvl3Button.innerText = "Level 3";
-        cmpLvlAudio.play(true);
         lvl1Button.addEventListener("click", handleLevel1Click);
         lvl2Button.addEventListener("click", handleLevel2Click);
         lvl3Button.addEventListener("click", handleLevel3Click);
     }
     function handleLevel1Click(_click: Event): void {
+        cmpLvlAudio.play(true);
         let successDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("success-message");
         successDiv.style.display = "none";
         for (let node of level1.getChildren()) {
@@ -324,6 +324,7 @@ namespace Labyrinth {
         gameState.level = 1;
     }
     function handleLevel2Click(_click: Event): void {
+        cmpLvlAudio.play(true);
         let successDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("success-message");
         successDiv.style.display = "none";
         for (let node of level2.getChildren()) {
@@ -346,6 +347,7 @@ namespace Labyrinth {
         gameState.level = 2;
     }
     function handleLevel3Click(_click: Event): void {
+        cmpLvlAudio.play(true);
         let successDiv: HTMLDivElement = <HTMLDivElement>document.getElementById("success-message");
         successDiv.style.display = "none";
         for (let node of level3.getChildren()) {
